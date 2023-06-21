@@ -10,7 +10,8 @@ Current Target is
 
 
 Done
-- Realm integration
+- Basic CRUD with Realm
+- Add pods Swipable Cell
 - Listing Games per platform
-- Basic CRUD
+
 
