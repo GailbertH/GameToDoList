@@ -12,4 +12,5 @@ Current Target is
 Done
 - Realm integration
 - Listing Games per platform
+- Basic CRUD
 
