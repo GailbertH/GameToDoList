@@ -90,4 +90,29 @@ class GameTableViewController: SwipeTableViewController
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        self.performSegue(withIdentifier: "goToInfo", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if (segue.identifier == "goToInfo")
+        {
+            let destinationVC = segue.destination as! InfoViewController
+            
+            if let indexPath = tableView.indexPathForSelectedRow
+            {
+                let selectedGame = games?[indexPath.row]
+                let gameInfo = InfoModel(
+                    gameID: selectedGame?.gameID ?? "asd",
+                    title: selectedGame?.title ?? "asd",
+                    note: "Something something",
+                    status: "Unplayed"
+                )
+                destinationVC.currentInfo = gameInfo
+            }
+        }
+    }
 }
