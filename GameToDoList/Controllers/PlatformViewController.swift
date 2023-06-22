@@ -9,7 +9,8 @@ import UIKit
 import RealmSwift
 import ChameleonFramework
 
-class PlatformViewController: SwipeTableViewController {
+class PlatformViewController: SwipeTableViewController
+{
     let realm = try! Realm()
     var platforms: Results<Platform>?
     
@@ -48,6 +49,11 @@ class PlatformViewController: SwipeTableViewController {
         tableView.reloadData()
     }
     
+    override func delete(at indexPath: IndexPath)
+    {
+        super.delete(at: indexPath)
+    }
+    
     @IBAction func addPressed(_ sender: UIBarButtonItem)
     {
         var newPlatformTextField = UITextField()
@@ -57,7 +63,7 @@ class PlatformViewController: SwipeTableViewController {
             {
                 let newPlatform = Platform()
                 newPlatform.name = safeNewPlatformText
-                newPlatform.priority = self.platforms != nil ? self.platforms!.count - 1 : 0
+                newPlatform.priority = self.platforms?.endIndex ?? 0
                 self.savePlatforms(platform: newPlatform)
             }
         }
