@@ -64,6 +64,7 @@ class GameTableViewController: SwipeTableViewController
                 let game = Game()
                 game.title = safeNewGameText
                 game.priority = self.games?.endIndex ?? 0
+                game.info = Info()
                 self.saveGame(game: game)
             }
         }
@@ -105,13 +106,7 @@ class GameTableViewController: SwipeTableViewController
             if let indexPath = tableView.indexPathForSelectedRow
             {
                 let selectedGame = games?[indexPath.row]
-                let gameInfo = InfoModel(
-                    gameID: selectedGame?.gameID ?? "asd",
-                    title: selectedGame?.title ?? "asd",
-                    note: "Something something",
-                    status: "Unplayed"
-                )
-                destinationVC.currentInfo = gameInfo
+                destinationVC.selectedGame = selectedGame
             }
         }
     }

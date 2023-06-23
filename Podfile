@@ -9,7 +9,8 @@ target 'GameToDoList' do
   
   pod 'RealmSwift', '~>10.39.1'
   pod 'SwipeCellKit'
-
+  pod 'DropDown'
+  
   pod 'ChameleonFramework/Swift', :git => 'https://github.com/wowansm/Chameleon.git', :branch => 'swift5'
 
 end
