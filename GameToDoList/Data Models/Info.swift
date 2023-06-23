@@ -8,8 +8,8 @@
 import Foundation
 import RealmSwift
 
-class Info: Object {
-    @objc dynamic var title: String = ""
+class Info: Object
+{
     @objc dynamic var note: String = ""
     @objc dynamic var status: Int = Status.Unplayed.rawValue
     @objc dynamic var dateLastPlayed: Date = Date.now

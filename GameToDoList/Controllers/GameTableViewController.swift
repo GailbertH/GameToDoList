@@ -64,6 +64,7 @@ class GameTableViewController: SwipeTableViewController
                 let game = Game()
                 game.title = safeNewGameText
                 game.priority = self.games?.endIndex ?? 0
+                game.info = Info()
                 self.saveGame(game: game)
             }
         }
@@ -89,5 +90,24 @@ class GameTableViewController: SwipeTableViewController
         cell.textLabel!.text = games?[indexPath.row].title ?? "None"
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        self.performSegue(withIdentifier: "goToInfo", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if (segue.identifier == "goToInfo")
+        {
+            let destinationVC = segue.destination as! InfoViewController
+            
+            if let indexPath = tableView.indexPathForSelectedRow
+            {
+                let selectedGame = games?[indexPath.row]
+                destinationVC.selectedGame = selectedGame
+            }
+        }
     }
 }

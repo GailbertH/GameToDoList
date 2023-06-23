@@ -9,7 +9,8 @@ import Foundation
 
 struct InfoModel
 {
+    let gameID: String
     let title: String
     let note: String
-    let status: Status
+    let status: String
 }

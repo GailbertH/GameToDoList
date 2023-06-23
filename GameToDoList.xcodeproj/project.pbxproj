@@ -20,6 +20,7 @@
 		A3EB99D02A42924200DE63AE /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EB99CF2A42924200DE63AE /* SwipeTableViewController.swift */; };
 		A3EB99D22A42BE3300DE63AE /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EB99D12A42BE3300DE63AE /* InfoModel.swift */; };
 		A3EB99D42A42D18300DE63AE /* GameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EB99D32A42D18300DE63AE /* GameTableViewController.swift */; };
+		A3EB99D62A43D78C00DE63AE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EB99D52A43D78C00DE63AE /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		A3EB99CF2A42924200DE63AE /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		A3EB99D12A42BE3300DE63AE /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
 		A3EB99D32A42D18300DE63AE /* GameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewController.swift; sourceTree = "<group>"; };
+		A3EB99D52A43D78C00DE63AE /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		CBA6C0C76D8082AA01E0E404 /* Pods-GameToDoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameToDoList.debug.xcconfig"; path = "Target Support Files/Pods-GameToDoList/Pods-GameToDoList.debug.xcconfig"; sourceTree = "<group>"; };
 		E24B363EAB49E59D6459ED4E /* Pods_GameToDoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameToDoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 				A3EB99CA2A427BC000DE63AE /* PlatformViewController.swift */,
 				A3EB99CF2A42924200DE63AE /* SwipeTableViewController.swift */,
 				A3EB99D32A42D18300DE63AE /* GameTableViewController.swift */,
+				A3EB99D52A43D78C00DE63AE /* InfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				A3EB99C52A4275EB00DE63AE /* Platform.swift in Sources */,
 				A3EB99CB2A427BC000DE63AE /* PlatformViewController.swift in Sources */,
 				A3EB99D42A42D18300DE63AE /* GameTableViewController.swift in Sources */,
+				A3EB99D62A43D78C00DE63AE /* InfoViewController.swift in Sources */,
 				A3EB99CE2A42834A00DE63AE /* Status.swift in Sources */,
 				A3EB99C32A4275D900DE63AE /* Game.swift in Sources */,
 				A3EB99A82A422D1C00DE63AE /* AppDelegate.swift in Sources */,
